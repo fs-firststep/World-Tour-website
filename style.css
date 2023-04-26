@@ -1,0 +1,679 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "montserrat" , sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15rem;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* ##################################### Utility Class ################################################# */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    columns: #555;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.btn-secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: #fff;
+}
+
+.btn-primary:hover{
+    background: #ecb9b9;
+}
+
+.btn-secondary:hover{
+    background: #f5a8a8;
+}
+
+/* HOME PAGE  */
+/* --------------------------------- Header styling -----------------------------------------------------  */
+.header{
+    height: 95vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./img/header-image.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.navbar{
+    /* border: 2px solid white ; */
+    padding: 1rem;
+}
+
+.header .navbar .logo{
+    float: left;
+}
+
+.header .navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.header .navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:link , .navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ...................... Header Content ......................................  */
+.header-content{
+    /* border: 2px solid white; */
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.2) , rgba(0,0,0,o.2));
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p{
+    text-transform: uppercase;
+}
+ 
+/* ----------------------------------- Showcase Area Styling ---------------------------------- */
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    background: #fff;
+    /* border: 2px solid red; */
+
+    box-shadow: 5px 5px 20px 0px #aaa;
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box , .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box , .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    /* border: 6px solid green; */
+    height: 100%; 
+
+}
+
+.row .text-box{
+     /* border: 2px solid purple;  */
+     padding: 20px;
+     
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* ----------------------------------- Feature Section Styling ---------------------------- */
+.feature{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    /* border: 2px solid green; */
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.314);
+}
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box{
+    width: 33.333333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.box1 , .box3{
+    background: #263238;
+    color: #fff;
+}
+
+.box2{
+    background: linear-gradient(25deg , #d64c7f , #ee4758 50%);
+    color: #fff;
+}
+
+
+/* ------------------------------ Footer Styling -------------------------------- */
+.footer{
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+/* ABOUT PAGE  */
+/* --------------------------------- About Us Styling --------------------------------  */
+.bg-dark{
+    background: #333;
+}
+
+.about{
+    padding: 5rem 0;
+}
+
+.navbar .logo{
+    float: left;
+}
+
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.about-heading::after{
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 6px solid #e63946;
+}
+
+/* ----------------------------------- About Wrapper Styling -------------------------------  */
+.about-wrapper{
+    /* border: 2px solid black; */
+    text-align: center;
+    margin-top: 2rem; 
+}
+
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-wrapper .left-about-wrapper{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right-about-wrapper{
+    float: right;
+    width: 50%;
+}
+
+/* .................................... Tick Mark Styling .....................................  */
+.about-wrapper li::before{
+    content: "\2713";
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+
+/* -------------------------------------- Count Styling ------------------------------------------  */
+.counts{
+    margin-top: 3rem;
+    /* border: 6px solid black; */
+}
+
+.count-item{
+    /* border: 2px solid red; */
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.counts::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.count-item span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+.count-item p{
+    font-weight: 700;
+    color: #555;
+    font-size: 2rem;
+}
+
+
+/* -------------------------------------------- Banner Styling -------------------------------  */
+.cta-banner{
+    background: linear-gradient(25deg , #d64c7f , #ee4758 50%);
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px 0px #00000057;
+    margin-top: 3rem;
+}
+
+.left-cta-banner{
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+
+.right-cta-banner{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+
+    padding: 0.5rem 2.5rem;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+}
+
+
+/* CONTACT PAGE  */
+/* ------------------------------------- Countact Us ------------------------------------  */
+.contact-form{
+    padding: 5rem 0;
+}
+
+/* 
+.form-wrapper{
+    border: 10px solid red;
+} */
+
+.form-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .company-address{
+    /* border: 4px solid green; */
+    width: 49%;
+    float: left;
+
+    background: #fff;
+    padding: 1rem;
+    height: 760px;
+}
+
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* ------------------------------------- Contact Form Styling ----------------------------------------  */
+
+.form-wrapper .form{
+    /* border: 4px dotted black; */
+    background: #fff;
+    width: 49%;
+    float: right;
+
+    padding: 1rem;
+    height: 760px;
+}
+
+.form h1::after{
+    content: "";
+    display: block;
+    border-bottom: 6px solid #ee4758;
+    width: 100%;
+}
+
+.form-wrapper .form label{
+    display: block;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label::after{
+    content: "* ";
+    color: #e63946;
+}
+
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 5em;
+    font-size: 16px;
+
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    
+    outline: none;
+    border: none;
+    cursor: pointer;
+}  
+
+
+
+/* ###################################### Media Quries ######################################  */
+
+
+@media (max-width: 500px){
+
+   /* HOME PAGE  */
+   /* ----------------------------------- Header Styling -----------------------------------------  */
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .nav-items , .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-content h1{
+        display: none;
+    }
+
+    
+    /* ------------------------------------ Showcase Area styling --------------------------------------  */
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box , .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* --------------------------------------- Feature Section Styling -----------------------------------  */
+    .feature .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+        box-shadow: 5px 5px 10px rgba(102,102,102,0.521);
+    }
+
+    .feature .box2 , .feature .box3{
+        margin-top: 7rem;
+    }
+
+    .box-wrapper {
+        box-shadow: none;
+    }
+
+   /* ABOUT PAGE */
+   .cta-banner-left , .cta-banner-right{
+       float: none;
+       width: 100%;
+       text-align: center;
+   }
+
+   /* CONTACT PAGE */
+   .form-wrapper .company-address{
+       float: none;
+       width: 100%;
+       height: auto;
+       margin-bottom: 5rem;
+   }
+
+   .form-wrapper .form{
+       float: none;
+       width: 100%;
+       height: auto;
+   }
+
+}
+
+@media ( min-width: 501px ) and ( max-width: 768px ){
+    
+    /* HOME PAGE  */
+    /* ----------------------------------------- Header Styling ---------------------------------------  */
+    html{
+        font-size: 50%;
+    }
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .nav-items , .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    /* ----------------------------------------- Showcase Area Styling --------------------------------------  */
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box , .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+     /* --------------------------------------- Feature Section Styling -----------------------------------  */
+     .feature .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+        box-shadow: 5px 5px 10px rgba(102,102,102,0.521);
+    }
+
+    .feature .box2 , .feature .box3{
+        margin-top: 7rem;
+    }
+
+    .box-wrapper {
+        box-shadow: none;
+    }
+
+    /* ABOUT PAGE */
+   .cta-banner-left , .cta-banner-right{
+     float: none;
+     width: 100%;
+     text-align: center;
+    }
+    
+    
+   /* CONTACT PAGE */
+   .form-wrapper .company-address{
+     float: none;
+     width: 100%;
+     height: auto;
+     margin-bottom: 5rem;
+    }
+
+   .form-wrapper .form{
+     float: none;
+     width: 100%;
+     height: auto; 
+    }
+
+}  
+
+@media ( min-width: 769px) and ( max-width: 1200px ){
+    html{
+        font-size: 56.25%;
+    }
+
+    .row .text-box h2{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+}
+
+/* ############################################ Landscape Mode ######################################   */
+@media ( orientation: Landscape ) and ( max-height: 500px ){
+    .header{
+        height: 90vmax;
+    }
+}
