@@ -11,4 +11,4 @@ This is My first website during my Web Development training, I created a Beautif
 
 # Contact Page
 ![image](https://github.com/fs-firststep/World-Tour/assets/91541029/c51e0596-3a63-43da-b5a9-aac7513f294e)
-visit: https://fs-firststep.github.io/World-Tour/contact.html
+visit: [https://fs-firststep.github.io/World-Tour/contact.html](https://fs-firststep.github.io/World-Tour-website/)https://fs-firststep.github.io/World-Tour-website/
